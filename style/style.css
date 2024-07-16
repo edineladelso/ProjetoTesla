@@ -7,12 +7,24 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    text-transform: none;
 }
 
-video {
-    width: 100vw;
-    height: 100vh;
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.logo {
+    filter: brightness(100);
+    position: fixed;
+    width: 120px;
+    left: 0;
+    top: 0;
+    margin: 10px 0 0 10px;
+}
+
+video, .img-tes {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -21,28 +33,28 @@ video {
     filter: brightness(60%); /*como diminuir o brilho do video*/
 }
 
-.logo {
-    filter: brightness(100);
-    position: fixed;
-    width: 120px;
-}
 h1, .text-1, .bay, .text-2 {color: white;}
+
 h1 {font-size: 50px;}
+
 .item{
     display: flex;
     position: relative;
-    width: 100vw;
-    height: vh;
+    max-width: 100vw;
+    height: 100vh;
     flex-direction:column;
     justify-content: space-between;
+    text-align: center;
+
+    scroll-snap-align: start;
 }
 
 .info-carro {
     margin-top: 80px;
-    text-align: center;
 }
+
 .rodape {
-    text-align: center;
+    margin-bottom: 20px;
 }
 .rodape button {
     padding: 7px 80px;
@@ -61,4 +73,8 @@ h1 {font-size: 50px;}
     text-align: center;
     font-size: 12px;
     margin-top: 10px;
+}
+
+.model-x {
+    color: rgba(34, 34, 34);
 }
