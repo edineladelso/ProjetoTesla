@@ -44,9 +44,9 @@ h1 {font-size: 50px;}
     height: 100vh;
     flex-direction:column;
     justify-content: space-between;
+    
+    scroll-snap-align: start;
     text-align: center;
-
-    scroll-snap-align: initial;
 }
 
 .info-carro {
