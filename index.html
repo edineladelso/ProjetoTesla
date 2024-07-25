@@ -7,39 +7,10 @@
     <title>ProjetoTesla</title>
 
     <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/form.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        form {
-            position: fixed;
-            left: -50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            transition: 1.5s;
-            background: white;
-            width: 400px;
-            height: 500px;
-            border-radius: 5px;
-        }
-
-        span.form {
-            display: flex;
-            flex-direction: column;
-            margin: 0 20px;
-            width: 160px;
-            text-align: center;
-        }
-        #close:hover{
-            cursor: pointer; 
-            background-color: #737171;
-        }
-        #reset:hover{ 
-            cursor: pointer;  background-color: #403d3d;
-        }
+        
     </style>
 </head>
 
@@ -83,7 +54,7 @@
         </li>
     </ul>
 
-<!--Aqui inicia o Formulário-->
+    <!--Aqui inicia o Formulário-->
     <form id="formulario" action="exemplo.php" method="post">
         <h1 style="margin: 15px; color: black; font-size: 24pt;">Tesla</h1>
 
@@ -91,7 +62,7 @@
             style="background: #403d3d; border: none; border-radius: 4px; padding: 5px 15px; position: absolute; right: 5px; top: 5px; color: #fff;">
             Fechar
         </button>
-        
+
         <div style="display: flex; flex-direction: column;justify-content: space-around;
         border-bottom: solid 1px; border-top: solid 1px; 
         height: 300px; width: 400px;
@@ -115,7 +86,8 @@
                     <input type="email" name="email" id="iemail">
                     <label style="font-size: 10pt;" for="iemail">exemplo@exemplo.com</label>
                 </span>
-                <button id="reset" type="reset" style="position: absolute; left: 50%; bottom: 19px; padding: 2px 20px; background-color: #4e4c4c; color: #fff; border: none; border-radius: 2px;">Limpar</button>
+                <button id="reset" type="reset"
+                    style="position: absolute; left: 50%; bottom: 19px; padding: 2px 20px; background-color: #4e4c4c; color: #fff; border: none; border-radius: 2px;">Limpar</button>
             </div>
         </div>
         <button

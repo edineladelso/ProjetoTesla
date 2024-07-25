@@ -8,11 +8,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
-html {
+html{
     scroll-snap-type: y mandatory;
 }
-
 .logo {
     filter: brightness(100);
     position: fixed;
