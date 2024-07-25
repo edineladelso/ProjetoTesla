@@ -4,5 +4,5 @@ function chamarformulario(){
     formulario.style.left = '50%'
 }
 function fecharFormulario(){
-    formulario.style.left = '-50%'
+    formulario.style.left = '-100%'
 }
