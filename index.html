@@ -7,6 +7,33 @@
     <title>ProjetoTesla</title>
 
     <link rel="stylesheet" href="./src/style/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            position: fixed;
+            left: -50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1.5s;
+            background: white;
+            width: 400px;
+            height: 500px;
+            border-radius: 5px;
+        }
+
+        span.form {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+            width: 160px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +49,7 @@
                 <p class="text-1">Parcelar a partir de 499 dólares</p>
             </div>
             <div class="rodape">
-                <button class="bay">Comprar agora</button>
+                <button class="bay" onclick="chamarformulario()">Comprar agora</button>
                 <button class="test">Test-Drive</button>
                 <p class="text-2">Não garantimos seu veículo imediatamente. Consultar estoque*</p>
             </div>
@@ -48,6 +75,45 @@
             </div>
         </li>
     </ul>
+
+
+    <form id="formulario" action="exemplo.php" method="post">
+        <h1 style="margin: 15px; color: black; font-size: 24pt;">Tesla</h1>
+
+        <button type="button" onclick="fecharFormulario()" style="background: #403d3d; border: none; border-radius: 4px; padding: 5px 15px; position: absolute; right: 5px; top: 5px; color: #fff;">
+            Fechar
+        </button>
+
+        <div style="display: flex; flex-direction: column;justify-content: space-around;
+        border-bottom: solid 1px; border-top: solid 1px; 
+        height: 300px; width: 400px;
+        position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+            <div>
+                <h2 style="margin: 15px; font-size: 16pt;">Nome</h2>
+                <div id="nome" style="display: flex; justify-content: space-evenly;">
+                    <span class="form" style="margin-right: 0;">
+                        <input type="text" name="nome" id="inome"><br>
+                        <label style="font-size: 10pt;" for="inome">First Name</label>
+                    </span>
+                    <span class="form">
+                        <input type="text" name="apelido" id="iapelido"><br>
+                        <label style="font-size: 10pt;" for="iapelido">Last Name</label>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <h2 style="margin: 15px; font-size: 16pt;">E-mail</h2>
+                <span class="form">
+                    <input type="email" name="email" id="iemail">
+                    <label style="font-size: 10pt;" for="iemail">exemplo@exemplo.com</label>
+                </span>
+            </div>
+        </div>
+        <button
+            style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); margin-bottom: 40px; padding: 8px 30px; background-color: rgb(0, 128, 53); border: none; color: #fff;"
+            type="submit">Enviar</button>
+    </form>
 </body>
 <script src="./src/scripts/script.js"></script>
+
 </html>
