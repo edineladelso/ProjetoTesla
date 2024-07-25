@@ -5,7 +5,7 @@
 
 form {
     position: fixed;
-    left: -50%;
+    left: -100%;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: 1.5s;
