@@ -1,6 +1,10 @@
-#link 
-https://edineladelso.github.io/ProjetoTesla/
-
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=edineladelso&color=yellow" alt="Profile views" /> </p>
+<p>
+   link da pagina web
+  <a href="https://edineladelso.github.io/ProjetoTesla/" target="_blank">
+    https://github.com/edineladelso/calculadoraPython
+  </a>
+</p>
 # Projeto Tesla
 
 Bem-vindo ao **Projeto Tesla**, um projeto de venda de carros inspirado nos padrões mais modernos do desenvolvimento frontend. Este repositório representa um portfólio avançado, focado em práticas de excelência, design responsivo e experiência do usuário (UX) diferenciada.
@@ -35,10 +39,9 @@ O Projeto Tesla é uma aplicação web para apresentação e venda de carros, si
 
 ## 🖼️ Demonstração
 
-![Home do Projeto](./assets/demo-home.png)
-![Detalhes do Carro](./assets/demo-detalhe.png)
+![Home do Projeto](./src/images/demo-home.png)
+![Detalhes do Carro](./src/images/demo-detalhe.png)
 
-*(Adicione screenshots reais do projeto na pasta `/assets` para potencializar o portfólio)*
 
 ## 🚀 Como Executar Localmente
 
