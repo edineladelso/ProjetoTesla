@@ -5,7 +5,8 @@
     https://github.com/edineladelso/calculadoraPython
   </a>
 </p>
-# Projeto Tesla
+
+<h1 align="center">Projeto Tesla</h1>
 
 Bem-vindo ao **Projeto Tesla**, um projeto de venda de carros inspirado nos padrões mais modernos do desenvolvimento frontend. Este repositório representa um portfólio avançado, focado em práticas de excelência, design responsivo e experiência do usuário (UX) diferenciada.
 
